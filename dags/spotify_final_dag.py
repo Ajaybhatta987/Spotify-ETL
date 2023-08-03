@@ -2,7 +2,6 @@ import datetime as dt
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.hooks.base import BaseHook
-from airflow.providers.postgres.hooks.postgres import PostgresHook
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from sqlalchemy import create_engine
 from spotify_etl import spotify_etl
