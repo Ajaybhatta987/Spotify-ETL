@@ -13,7 +13,7 @@ client_id = os.getenv("CLIENT_ID")
 client_secret = os.getenv("CLIENT_SECRET")
 redirect_uri = "http://localhost:8888/callback"
 app = Flask(__name__) 
-app.secret_key = "Ajjudaii@987"
+app.secret_key = os.getenv("FLASK_SECRET")
 
 def get_access_token_client_credentials():
     # Implementing the method to get the access token
